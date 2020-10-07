@@ -1,0 +1,14 @@
+JAVA Versions
+https://stackoverflow.com/questions/32942023/ubuntu-openjdk-8-unable-to-locate-package
+
+DataFrame
+https://dzone.com/articles/pyspark-join-explained-with-examples
+
+Install Spark
+https://computingforgeeks.com/how-to-install-apache-spark-on-ubuntu-debian/
+
+configure - SPARK_HOME/conf/spark-env.sh
+export SPARK_HOME="/home/song/Development/apache-spark/spark-2.4.5-bin-hadoop2.7"
+PATH=$SPARK_HOME/bin:$PATH
+# Python executable
+#PYSPARK_PYTHON=/home/song/sandbox/python-excercise-repository/environment-3.4/bin/python
