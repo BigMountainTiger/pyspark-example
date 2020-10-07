@@ -1,9 +1,17 @@
 
 import sys
+import pyspark
 from pyspark import SparkContext, SQLContext, SparkConf
 from pyspark.sql import Row
 
 def run():
+
+  print(pyspark.__file__)
+
+  # Get the module search path
+  for p in sys.path:
+    print(p)
+
   conf = SparkConf().setAppName('load CSV').setMaster('local[2]')
 
   context = SparkContext(conf = conf)
