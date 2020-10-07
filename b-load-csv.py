@@ -19,7 +19,7 @@ def run():
   df.show()
 
   path = '/home/song/Sandbox/pyspark-example/files/name-score.csv'
-  
+
   # df.write.csv(path, header=True)
   df.toPandas().to_csv(path, index=False)
 
