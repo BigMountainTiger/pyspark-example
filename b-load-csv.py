@@ -1,6 +1,7 @@
 
 import sys
 import pyspark
+import pyspark.sql.functions as F
 from pyspark import SparkContext, SQLContext, SparkConf
 from pyspark.sql import Row
 
@@ -25,6 +26,10 @@ def run():
   df_name.show()
   df_score.show()
   df.show()
+
+  # Case insensitive compare
+  df_song = df.filter(F.lower(df['Name']) == 'Song Li'.lower())
+  df_song.show()
 
   path = '/home/song/Sandbox/pyspark-example/files/name-score.csv'
 
