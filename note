@@ -1,6 +1,8 @@
 JAVA Versions
 https://stackoverflow.com/questions/32942023/ubuntu-openjdk-8-unable-to-locate-package
 
+sudo update-alternatives --config java
+
 DataFrame
 https://dzone.com/articles/pyspark-join-explained-with-examples
 
