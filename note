@@ -14,4 +14,4 @@ PATH=$SPARK_HOME/bin:$PATH
 #PYSPARK_PYTHON=/home/song/sandbox/python-excercise-repository/environment-3.4/bin/python
 
 spark-submit
-spark-submit --master local[1] c-flat-map-parallel.py
+spark-submit --master local[3] 002-test-spark-context.py
