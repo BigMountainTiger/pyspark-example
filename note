@@ -12,3 +12,6 @@ export SPARK_HOME="/home/song/Development/apache-spark/spark-2.4.5-bin-hadoop2.7
 PATH=$SPARK_HOME/bin:$PATH
 # Python executable
 #PYSPARK_PYTHON=/home/song/sandbox/python-excercise-repository/environment-3.4/bin/python
+
+spark-submit
+spark-submit --master local[1] c-flat-map-parallel.py
