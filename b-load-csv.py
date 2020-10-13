@@ -1,9 +1,16 @@
 
 import sys
+import os
+import socket
 import pyspark
 import pyspark.sql.functions as F
 from pyspark import SparkContext, SQLContext, SparkConf
 from pyspark.sql import Row
+
+def newValue():
+  #return 'From process ({}) - ({})'.format(os.getpid(), socket.gethostname())
+  return '({})'.format(socket.gethostname())
+
 
 def run():
 
@@ -25,7 +32,11 @@ def run():
 
   df_name.show()
   df_score.show()
+
+  df_new_column = df.withColumn('NewColumn', F.lit(newValue()))
+
   df.show()
+  df_new_column.show()
 
   # Case insensitive compare
   df_song = df.filter(F.lower(df['Name']) == 'Song Li'.lower())
