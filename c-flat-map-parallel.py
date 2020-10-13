@@ -8,8 +8,7 @@ def getAListFromAFile(file_path):
   return lines
 
 def run():
-  conf = SparkConf().setAppName("word count") \
-    .setMaster("local[2]")
+  conf = SparkConf().setAppName("word count")
 
   context = SparkContext(conf = conf)
   context.setLogLevel('ERROR')

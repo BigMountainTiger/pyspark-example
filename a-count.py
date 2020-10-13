@@ -3,7 +3,7 @@ from pyspark import SparkContext, SparkConf
 from pyspark.sql import Row
 
 if __name__ == "__main__":
-    conf = SparkConf().setAppName("word count").setMaster('local[2]')
+    conf = SparkConf().setAppName("word count")
 
     context = SparkContext(conf = conf)
     context.setLogLevel('ERROR')

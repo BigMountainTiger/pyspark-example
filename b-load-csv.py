@@ -13,7 +13,7 @@ def run():
   for p in sys.path:
     print(p)
 
-  conf = SparkConf().setAppName('load CSV').setMaster('local[2]')
+  conf = SparkConf().setAppName('load CSV')
 
   context = SparkContext(conf = conf)
   context.setLogLevel('ERROR')
