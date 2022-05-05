@@ -13,7 +13,7 @@ if __name__ == "__main__":
     print('No. of workers = {}'.format(no_of_workers))
     
     data = ('This', 'is', 'is', 'cool')
-    rdd = context.parallelize(data, 2).cache()
+    rdd = context.parallelize(data, 1).cache()
     
     print('No of partitions - {}'.format(rdd.getNumPartitions()))
     wordCounts = rdd.countByValue()

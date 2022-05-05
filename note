@@ -17,3 +17,8 @@ PATH=$SPARK_HOME/bin:$PATH
 
 spark-submit
 spark-submit --master local[3] 002-test-spark-context.py
+
+# To run spark-submit --master local[3], install pyspark in the virtual-env is sufficient
+# https://stackoverflow.com/questions/40012093/what-is-the-difference-between-spark-standalone-yarn-and-local-mode
+# When you use master as local[2] you request Spark to use 2 core's and run the driver and workers in the same JVM.
+# In local mode all spark job related tasks run in the same JVM.

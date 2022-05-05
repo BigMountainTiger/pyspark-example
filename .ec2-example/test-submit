@@ -1,0 +1,5 @@
+#!/bin/bash
+
+spark-submit --master spark://spark-example.bigmountaintiger.com:7077 \
+    .ec2-example/examples/get_s3_file.py
+

@@ -129,4 +129,6 @@ dmypy.json
 .pyre/
 
 # Ignore the virtualenv
-env-pyspark/
+env-3.9/
+
+.ssh/
